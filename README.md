@@ -7,6 +7,7 @@
 [![make.fun](https://make.fun/badge/gta6-trophy-rarity-forecast-01.svg)](https://make.fun/bounty/gta6-trophy-rarity-forecast-01)
 [![rank](https://make.fun/badge/gta6-trophy-rarity-forecast-01/aam110/makefun-gta6-trophy-rarity-forecast/rank.svg)](https://make.fun/bounty/gta6-trophy-rarity-forecast-01)
 [![reward](https://make.fun/badge/gta6-trophy-rarity-forecast-01/aam110/makefun-gta6-trophy-rarity-forecast/reward.svg)](https://make.fun/bounty/gta6-trophy-rarity-forecast-01)
+[![CI](https://github.com/aam110/makefun-gta6-trophy-rarity-forecast/actions/workflows/ci.yml/badge.svg)](https://github.com/aam110/makefun-gta6-trophy-rarity-forecast/actions/workflows/ci.yml)
 
 **Entry for [gta6-trophy-rarity-forecast-01](https://make.fun/bounty/gta6-trophy-rarity-forecast-01)** · $250 escrowed · 20 paid places
 
