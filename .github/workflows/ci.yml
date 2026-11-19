@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  forecast:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Syntax check
+        run: python -m py_compile main.py
+      - name: Run forecaster on the practice case
+        run: |
+          mkdir -p out
+          MAKEFUN_INPUT_DIR=tests MAKEFUN_OUTPUT_DIR=out python main.py
+      - name: Verify forecast output
+        run: |
+          test -f out/p00.out
+          python -c "import json; d = json.load(open('out/p00.out')); assert len(d['trophies']) == 55, len(d['trophies']); assert all(len(t['q']) == 5 for t in d['trophies']); print('forecast OK: 55 trophies x 5 quantiles')"
